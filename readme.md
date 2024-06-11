@@ -1,1 +1,1 @@
-# AWS Community Day Bengaluru 2024
+# AWSheTech Day 2024
