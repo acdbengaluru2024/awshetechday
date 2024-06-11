@@ -1,0 +1,40 @@
+name: Sync S3 Bucket and CloudFront Invalidation
+
+on:
+  push:
+    branches:
+      - main  # Replace 'main' with your branch name
+
+jobs:
+  sync-s3-and-invalidate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1  # Replace with your bucket's region
+
+      - name: Delete existing files in S3 bucket
+        run: |
+          aws s3 rm s3://awshetechday2024/ --recursive
+
+      - name: Clone GitHub repository
+        run: git clone https://github.com/acdbengaluru2024/awshetechday.git
+
+      - name: Sync repository contents with S3 bucket
+        run: |
+          aws s3 sync . s3://awshetechday2024/ --delete
+
+      - name: Create CloudFront invalidation
+        run: |
+          aws cloudfront create-invalidation --distribution-id E2JXI6B3WDE5NJ --paths "/*"
+        # env:
+        #   AWS_DEFAULT_REGION: your-cloudfront-region  # Replace with your CloudFront region
+        #   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        #   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
