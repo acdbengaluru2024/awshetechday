@@ -2368,13 +2368,13 @@ th, td {
 }
 
 /* line 736, ../sass/shared/_home.scss */
-#page .section-5 .sponsors .cats .flex-it .f1>div:not(.head).SLSGuru {
-  background-image: url(../images/spons/Logo-Serverless-Guru.svg);
+#page .section-5 .sponsors .cats .flex-it .f1>div:not(.head).Agilisium {
+  background-image: url(../images/shetechday2024/sponsors/Agilisium.webp);
 }
 
 /* line 739, ../sass/shared/_home.scss */
-#page .section-5 .sponsors .cats .flex-it .f1>div:not(.head).MongoDB {
-  background-image: url(../images/spons/MongoDB_Fores-Green.svg);
+#page .section-5 .sponsors .cats .flex-it .f1>div:not(.head).Presidio {
+  background-image: url(../images/shetechday2024/sponsors/Presidio.svg);
 }
 
 /* line 739, ../sass/shared/_home.scss */
@@ -2901,24 +2901,24 @@ th, td {
   background-image: url(../images/vols/acd-bengaluru-2024/Vivek.jpeg);
 }
 
-#page .section-6 .volunteers .vl-i .person[data-fname="Ayyanar"] .img {
-  background-image: url(../images/vols/acd-bengaluru-2024/Ayyanar-Jeyakrishnan.jpg);
+#page .section-6 .volunteers .vl-i .person[data-fname="Abinaya"] .img {
+  background-image: url(../images/shetechday2024/volunteers/Abinaya.jpg);
 }
 
 #page .section-6 .volunteers .vl-i .person[data-fname="Ramya"] .img {
   background-image: url(../images/vols/acd-bengaluru-2024/Ramya.JPG);
 }
 
-#page .section-6 .volunteers .vl-i .person[data-fname="Avinash"] .img {
-  background-image: url(../images/vols/acd-bengaluru-2024/AvinashDalvi.png);
+#page .section-6 .volunteers .vl-i .person[data-fname="Vijayalakshmi"] .img {
+  background-image: url(../images/shetechday2024/volunteers/Vijayalakshmi.jpg);
 }
 
 #page .section-6 .volunteers .vl-i .person[data-fname="Sankara"] .img {
   background-image: url(../images/vols/acd-bengaluru-2024/Sankara-Sabapathy-Ramalingam.jpg);
 }
 
-#page .section-6 .volunteers .vl-i .person[data-fname="Ranjinni"] .img {
-  background-image: url(../images/vols/acd-bengaluru-2024/Ranjinni-Joshe.jpeg)
+#page .section-6 .volunteers .vl-i .person[data-fname="Jeevitha"] .img {
+  background-image: url(../images/shetechday2024/volunteers/Jeevitha.jpg)
 }
 
 #page .section-6 .volunteers .vl-i .person[data-fname="Ramya"] .img {
