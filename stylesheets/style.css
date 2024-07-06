@@ -2402,8 +2402,16 @@ th, td {
   background-image: url(../images/spons/konfhub-logo.svg);
 }
 
-#page .section-5 .sponsors .cats .flex-it .f1>div:not(.head).mongodbUG {
-  background-image: url(../images/spons/MUG_Bengaluru_DarkGreen.svg);
+#page .section-5 .sponsors .cats .flex-it .f1>div:not(.head).awsUGChennai {
+  background-image: url(../images/shetechday2024/sponsors/awsUGChennai.jpeg)
+}
+
+#page .section-5 .sponsors .cats .flex-it .f1>div:not(.head).cloudClub {
+  background-image: url(../images/shetechday2024/sponsors/St_Joseph_Cloud_Club.jpeg)
+}
+
+#page .section-5 .sponsors .cats .flex-it .f1>div:not(.head).stjoseph {
+  background-image: url(../images/shetechday2024/sponsors/st-new-logo-2024.webp)
 }
 
 /* line 751, ../sass/shared/_home.scss */
